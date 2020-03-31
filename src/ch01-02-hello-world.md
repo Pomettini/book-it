@@ -50,7 +50,7 @@ l'estensione *.rs*. Se usi più di una parola nel nome del tuo file, usa un
 trattino basso per separare le parole. Per esempio, utilizza *hello_world.rs*
 al posto di *helloworld.rs*.
 
-Ora apri il file *main.rs* che hai appena creato ed inserisci il codice in Listing 1-1.
+Ora apri il file *main.rs* che hai appena creato ed inserisci il codice come nell'esempio Listing 1-1.
 
 <span class="filename">Filename: main.rs</span>
 
