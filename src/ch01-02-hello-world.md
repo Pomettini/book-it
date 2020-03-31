@@ -1,28 +1,31 @@
 ## Hello, World!
 
-Now that you’ve installed Rust, let’s write your first Rust program. It’s
-traditional when learning a new language to write a little program that prints
-the text `Hello, world!` to the screen, so we’ll do the same here!
+Ora che hai installato Rust, andiamo a scrivere il tuo primo programma Rust. 
+quando si impara un nuovo linguaggio, è abitudine scrivere un piccolo programma
+che scrive `Hello, world!` sullo schermo, quindi faremo la stessa cosa! 
 
-> Note: This book assumes basic familiarity with the command line. Rust makes
-> no specific demands about your editing or tooling or where your code lives, so
-> if you prefer to use an integrated development environment (IDE) instead of
-> the command line, feel free to use your favorite IDE. Many IDEs now have some
-> degree of Rust support; check the IDE’s documentation for details. Recently,
-> the Rust team has been focusing on enabling great IDE support, and progress
-> has been made rapidly on that front!
 
-### Creating a Project Directory
+> Nota: Questo libro presuppone una conoscenza basilare della linea dei comandi. 
+> Rust non richiede requisiti specifici in merito alla modifica, agli strumenti o 
+> alla posizione del codice, quindi se preferisci usare un IDE al posto della linea
+> dei comandi, sentiti libero di usare il tuo IDE preferito. 
+> Diversi IDE hanno diversi gradi di supporto di Rust; controlla i dettagli della
+> documentazione dell'IDE per avere maggiori dettagli. Recentemente il team di Rust
+> si è focalizzato su come attivare un buon supporto per gli IDE e sono stati fatti
+> ottimi progressi in tal senso! 
 
-You’ll start by making a directory to store your Rust code. It doesn’t matter
-to Rust where your code lives, but for the exercises and projects in this book,
-we suggest making a *projects* directory in your home directory and keeping all
-your projects there.
 
-Open a terminal and enter the following commands to make a *projects* directory
-and a directory for the “Hello, world!” project within the *projects* directory.
+### Creare una directory per i progetti
 
-For Linux, macOS, and PowerShell on Windows, enter this:
+Inizierai creando una directory per conservare il tuo codice scritto in Rust. 
+Non importa dove viene conservato il tuo codice, ma per gli esercizi e i progetti
+di questo libro, noi consigliamo di creare una directory *progetti* nella tua
+directory principale per conservare lì tutti i progetti. 
+
+Apri un terminale ed esegui i seguenti comandi per creare una cartella *progetti*
+e una directory per il progetto "Ciao, Mondo!" dentro la directory *progetti*. 
+
+Per Linux, macOS, e PowerShell su Windows, scrivi questo:
 
 ```text
 $ mkdir ~/projects
@@ -31,7 +34,7 @@ $ mkdir hello_world
 $ cd hello_world
 ```
 
-For Windows CMD, enter this:
+Per Windows CMD, scrivi questo:
 
 ```cmd
 > mkdir "%USERPROFILE%\projects"
@@ -40,14 +43,14 @@ For Windows CMD, enter this:
 > cd hello_world
 ```
 
-### Writing and Running a Rust Program
+### Scrivere ed eseguire un programma Rust
 
-Next, make a new source file and call it *main.rs*. Rust files always end with
-the *.rs* extension. If you’re using more than one word in your filename, use
-an underscore to separate them. For example, use *hello_world.rs* rather than
-*helloworld.rs*.
+Poi, crea un nuovo file e chiamalo *main.rs*. I file Rust finiscono sempre con
+l'estensione *.rs*. Se usi più di una parola nel nome del tuo file, usa un 
+trattino basso per separare le parole. Per esempio, utilizza *hello_world.rs*
+al posto di *helloworld.rs*.
 
-Now open the *main.rs* file you just created and enter the code in Listing 1-1.
+Ora apri il file *main.rs* che hai appena creato ed inserisci il codice in Listing 1-1.
 
 <span class="filename">Filename: main.rs</span>
 
@@ -57,10 +60,10 @@ fn main() {
 }
 ```
 
-<span class="caption">Listing 1-1: A program that prints `Hello, world!`</span>
+<span class="caption">Listing 1-1: Un programma che scrive `Hello, world!`</span>
 
-Save the file and go back to your terminal window. On Linux or macOS, enter
-the following commands to compile and run the file:
+Salva il file e torna sulla finestra del tuo terminale. Su Linux o macOS, scrivi
+i seguenti comandi per compilare ed eseguire il file:
 
 ```text
 $ rustc main.rs
@@ -68,7 +71,7 @@ $ ./main
 Hello, world!
 ```
 
-On Windows, enter the command `.\main.exe` instead of `./main`:
+Su Windows, scrivi il comando `.\main.exe` invece di `./main`:
 
 ```powershell
 > rustc main.rs
@@ -76,18 +79,19 @@ On Windows, enter the command `.\main.exe` instead of `./main`:
 Hello, world!
 ```
 
-Regardless of your operating system, the string `Hello, world!` should print to
-the terminal. If you don’t see this output, refer back to the
-[“Troubleshooting”][troubleshooting]<!-- ignore --> part of the Installation
-section for ways to get help.
+Indipendentemente dal sistema operativo che stai usando , la stringa "Hello, world!" 
+dovrebbe essere scritta sul tuo terminale.
+Se non vedi questo output, fai riferimento alla [“Troubleshooting”][troubleshooting]<!-- ignore --> 
+alla sezione d'installazione per ricevere aiuto. 
 
-If `Hello, world!` did print, congratulations! You’ve officially written a Rust
-program. That makes you a Rust programmer—welcome!
 
-### Anatomy of a Rust Program
+Se sul terminale verrà scritto `Hello, world!`, congratulazioni! Hai ufficialmente scritto un 
+programma Rust, questo fa di te uno sviluppatore Rust- Benvenuto! 
 
-Let’s review in detail what just happened in your “Hello, world!” program.
-Here’s the first piece of the puzzle:
+### Anatomia di un programma Rust 
+
+Andiamo a vedere nel dettaglio cosa è appena successo nel tuo programma “Hello, world!”. 
+Questo è il primo pezzo del puzzle:
 
 ```rust
 fn main() {
@@ -95,15 +99,16 @@ fn main() {
 }
 ```
 
-These lines define a function in Rust. The `main` function is special: it is
-always the first code that runs in every executable Rust program. The first
-line declares a function named `main` that has no parameters and returns
-nothing. If there were parameters, they would go inside the parentheses, `()`.
+Questa linea definisce una funzione in Rust. La funzione `main`è speciale: 
+è il primo codice che viene eseguito in ogni programma Rust eseguibile. La prima
+linea dichiara una funzione chiamata `main` che non ha parametri e non dà nulla indietro. 
+Se ci fossero stati parametri, sarebbero stati inseriti tra le parentesi, `()`. 
 
-Also, note that the function body is wrapped in curly brackets, `{}`. Rust
-requires these around all function bodies. It’s good style to place the opening
-curly bracket on the same line as the function declaration, adding one space in
-between.
+Ancora, nota che il corpo della funzione è contenuto nelle parentesi graffe , `{}`. 
+Rust le richiede nei corpi di tutte le funzioni. 
+È consigliabile inserire l'apertura delle parentesi graffe nella stessa linea della dichiarazione della funzione, 
+aggiungendo uno spazio tra di essi. 
+
 
 At the time of this writing, an automatic formatter tool called `rustfmt` is
 under development. If you want to stick to a standard style across Rust
@@ -134,10 +139,9 @@ Fourth, we end the line with a semicolon (`;`), which indicates that this
 expression is over and the next one is ready to begin. Most lines of Rust code
 end with a semicolon.
 
-### Compiling and Running Are Separate Steps
+### La compilazione e l'esecuzione sono due step separati
 
-You’ve just run a newly created program, so let’s examine each step in the
-process.
+You’ve just run a newly created program, so let’s examine each step in the process.
 
 Before running a Rust program, you must compile it using the Rust compiler by
 entering the `rustc` command and passing it the name of your source file, like
@@ -178,8 +182,8 @@ From here, you run the *main* or *main.exe* file, like this:
 $ ./main # or .\main.exe on Windows
 ```
 
-If *main.rs* was your “Hello, world!” program, this line would print `Hello,
-world!` to your terminal.
+Se *main.rs* era il tuo programma “Hello, world!”, questa linea scriverà `Hello,
+world!` sul tuo terminale.
 
 If you’re more familiar with a dynamic language, such as Ruby, Python, or
 JavaScript, you might not be used to compiling and running a program as
