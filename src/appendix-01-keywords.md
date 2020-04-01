@@ -1,17 +1,18 @@
-## Appendix A: Keywords
+## Appendice A: Parole Chiave
 
-The following list contains keywords that are reserved for current or future
-use by the Rust language. As such, they cannot be used as identifiers (except
-as raw identifiers as we’ll discuss in the “[Raw
-Identifiers][raw-identifiers]<!-- ignore -->” section), including names of
-functions, variables, parameters, struct fields, modules, crates, constants,
-macros, static values, attributes, types, traits, or lifetimes.
+La lista seguente contiene le parole chiave che sono riservate per un uso
+corrente o futuro nel linguaggio Rust. Pertanto, non possono essere utilizzate
+come identificatori (eccetto che come identificativi di linea, ma ne parleremo
+nella sezione “[Raw Identifiers][raw-identifiers]<!-- ignore -->”), inclusi nomi
+di funzioni, variabili, parametri, campi di struttura, moduli, crates, costantemi, 
+macro, valori statici, attributi, types, tratti o lifetimes. 
+
 
 [raw-identifiers]: #raw-identifiers
 
-### Keywords Currently in Use
+### Parole chiave attualmente in uso
 
-The following keywords currently have the functionality described.
+Le seguenti parole chiave hanno già la funzionalità descritta. 
 
 * `as` - perform primitive casting, disambiguate the specific trait containing
   an item, or rename items in `use` and `extern crate` statements
@@ -57,8 +58,8 @@ The following keywords currently have the functionality described.
 
 ### Keywords Reserved for Future Use
 
-The following keywords do not have any functionality but are reserved by Rust
-for potential future use.
+Le seguenti parole chiave non hanno nessuna funzionalità ma sono riservate
+nel linguaggio Rust per un potenziale uso futuro. 
 
 * `abstract`
 * `become`
