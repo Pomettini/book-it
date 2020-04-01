@@ -1,6 +1,6 @@
 # Introduzione
 
-> Note: Questa edizione del libro è la stessa de [The Rust Programming Language][nsprust] 
+> Nota: Questa edizione del libro è la stessa de [The Rust Programming Language][nsprust] 
 > disponibile in formato stampa ed in formato ebook su [No Starch Press][nsp].
 
 [nsprust]: https://nostarch.com/rust
