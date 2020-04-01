@@ -117,7 +117,7 @@ plans to eventually include this tool with the standard Rust distribution, like
 `rustc`. So depending on when you read this book, it might already be installed
 on your computer! Check the online documentation for more details.
 
-Dentro la funzione `main`c'è il codice seguente:
+Dentro la funzione `main`c'è il seguente codice:
 
 ```rust
     println!("Hello, world!");
@@ -141,11 +141,10 @@ end with a semicolon.
 
 ### La compilazione e l'esecuzione sono due step separati
 
-You’ve just run a newly created program, so let’s examine each step in the process.
+Hai appena eseguito un programma creato da poco, esaminiamo ogni step del processo. 
 
-Before running a Rust program, you must compile it using the Rust compiler by
-entering the `rustc` command and passing it the name of your source file, like
-this:
+Prima di eseguire un programma scritto in Rust, devi compilarlo usando il compiler
+di Rust scrivendo il comando `rustc` dandogli il nome del tuo file, cosi:
 
 ```text
 $ rustc main.rs
