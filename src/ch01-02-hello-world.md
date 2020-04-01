@@ -81,8 +81,7 @@ Hello, world!
 
 Indipendentemente dal sistema operativo che stai usando , la stringa "Hello, world!" 
 dovrebbe essere scritta sul tuo terminale.
-Se non vedi questo output, fai riferimento alla [“Troubleshooting”][troubleshooting]<!-- ignore --> 
-alla sezione d'installazione per ricevere aiuto. 
+Se non vedi questo output, fai riferimento  alla sezione d'installazione per ricevere aiuto. 
 
 
 Se sul terminale verrà scritto `Hello, world!`, congratulazioni! Hai ufficialmente scritto un 
@@ -110,14 +109,15 @@ Rust le richiede nei corpi di tutte le funzioni.
 aggiungendo uno spazio tra di essi. 
 
 
-At the time of this writing, an automatic formatter tool called `rustfmt` is
-under development. If you want to stick to a standard style across Rust
+Mentre stiamo scrivendo questo libro, un tool di formattazione automatico 
+chiamato `rustfmt` è in fase di sviluppo. 
+ If you want to stick to a standard style across Rust
 projects, `rustfmt` will format your code in a particular style. The Rust team
 plans to eventually include this tool with the standard Rust distribution, like
 `rustc`. So depending on when you read this book, it might already be installed
 on your computer! Check the online documentation for more details.
 
-Inside the `main` function is the following code:
+Dentro la funzione `main`c'è il codice seguente:
 
 ```rust
     println!("Hello, world!");
