@@ -50,7 +50,8 @@ l'estensione *.rs*. Se usi più di una parola nel nome del tuo file, usa un
 trattino basso per separare le parole. Per esempio, utilizza *hello_world.rs*
 al posto di *helloworld.rs*.
 
-Ora apri il file *main.rs* che hai appena creato ed inserisci il codice come nell'esempio Listing 1-1.
+Ora apri il file *main.rs* che hai appena creato ed inserisci il codice come 
+nell'esempio Listing 1-1.
 
 <span class="filename">Filename: main.rs</span>
 
@@ -105,17 +106,19 @@ Se ci fossero stati parametri, sarebbero stati inseriti tra le parentesi, `()`.
 
 Ancora, nota che il corpo della funzione è contenuto nelle parentesi graffe , `{}`. 
 Rust le richiede nei corpi di tutte le funzioni. 
-È consigliabile inserire l'apertura delle parentesi graffe nella stessa linea della dichiarazione della funzione, 
-aggiungendo uno spazio tra di essi. 
+È consigliabile inserire l'apertura delle parentesi graffe nella stessa linea della dichiarazione 
+della funzione, aggiungendo uno spazio tra di essi. 
 
 
 Mentre stiamo scrivendo questo libro, un tool di formattazione automatico 
-chiamato `rustfmt` è in fase di sviluppo. 
- If you want to stick to a standard style across Rust
-projects, `rustfmt` will format your code in a particular style. The Rust team
-plans to eventually include this tool with the standard Rust distribution, like
-`rustc`. So depending on when you read this book, it might already be installed
-on your computer! Check the online documentation for more details.
+chiamato `rustfmt` è in fase di sviluppo.
+ Se vuoi attenerti a uno stile standard sui progetti Rust, `rustfmt` formatterà il codice 
+ nello stile da te preferito.
+ Il team di Rust sta pianificando di includere questo tool nel pacchetto standard di Rust, 
+ come avviene per `rustc`.
+ In base a quando leggi questo libro, potrebbe già essere installato sul tuo pc!
+ Consulta la documentazione online per ricevere più dettagli.
+ 
 
 Dentro la funzione `main`c'è il seguente codice:
 
