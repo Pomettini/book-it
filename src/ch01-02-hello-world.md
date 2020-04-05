@@ -171,13 +171,11 @@ main.exe
 main.pdb
 main.rs
 ```
-
 Questo mostra il codice sorgente del file con l'estensione *.rs*, il file
-eseguibile (*main.exe* on Windows, ma *main* su tutte le altre piattaforme), e, 
-This shows the source code file with the *.rs* extension, the executable file
-(*main.exe* on Windows, ma *main* su tutte le altre piattaforme), and, when using
-Windows, a file containing debugging information with the *.pdb* extension.
-From here, you run the *main* or *main.exe* file, like this:
+eseguibile (*main.exe* on Windows, ma *main* su tutte le altre piattaforme), 
+e, quando si utilizza Windows, un file contenente le informazioni di debug 
+con l'estensione *.pdb*. 
+Da qui, tu esegui il file *main* or *main.exe*, come qui sotto:
 
 ```text
 $ ./main # o .\main.exe su Windows
