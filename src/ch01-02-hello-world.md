@@ -149,9 +149,8 @@ di Rust scrivendo il comando `rustc` dandogli il nome del tuo file, cosi:
 ```text
 $ rustc main.rs
 ```
-
-If you have a C or C++ background, you’ll notice that this is similar to `gcc`
-or `clang`. After compiling successfully, Rust outputs a binary executable.
+Se hai esperienza con un C o C++,noterai che è simile a `gcc` o a `clang`.
+Dopo aver compilato con successo, Rust genera un eseguibile binario. 
 
 On Linux, macOS, and PowerShell on Windows, you can see the executable by
 entering the `ls` command in your shell. On Linux and macOS, you’ll see two
