@@ -152,9 +152,8 @@ di Rust scrivendo il comando `rustc` dandogli il nome del tuo file, cosi:
 ```text
 $ rustc main.rs
 ```
-
-If you have a C or C++ background, you’ll notice that this is similar to `gcc`
-or `clang`. After compiling successfully, Rust outputs a binary executable.
+Se hai esperienza con un C o C++,noterai che è simile a `gcc` o a `clang`.
+Dopo aver compilato con successo, Rust genera un eseguibile binario. 
 
 On Linux, macOS, and PowerShell on Windows, you can see the executable by
 entering the `ls` command in your shell. On Linux and macOS, you’ll see two
@@ -174,31 +173,33 @@ main.exe
 main.pdb
 main.rs
 ```
-
-This shows the source code file with the *.rs* extension, the executable file
-(*main.exe* on Windows, but *main* on all other platforms), and, when using
-Windows, a file containing debugging information with the *.pdb* extension.
-From here, you run the *main* or *main.exe* file, like this:
+Questo mostra il codice sorgente del file con l'estensione *.rs*, il file
+eseguibile (*main.exe* on Windows, ma *main* su tutte le altre piattaforme), 
+e, quando si utilizza Windows, un file contenente le informazioni di debug 
+con l'estensione *.pdb*. 
+Da qui, tu esegui il file *main* or *main.exe*, come qui sotto:
 
 ```text
-$ ./main # or .\main.exe on Windows
+$ ./main # o .\main.exe su Windows
 ```
 
 Se *main.rs* era il tuo programma “Hello, world!”, questa linea scriverà `Hello,
 world!` sul tuo terminale.
 
-If you’re more familiar with a dynamic language, such as Ruby, Python, or
-JavaScript, you might not be used to compiling and running a program as
-separate steps. Rust is an *ahead-of-time compiled* language, meaning you can
+Se hai familiarità con i linguaggi dinamici, come Ruby, Python o Javascript, 
+potresti non essere abituato a compilare ed eseguire un programma in due
+passaggi separati.
+Rust is an *ahead-of-time compiled* language, meaning you can
 compile a program and give the executable to someone else, and they can run it
 even without having Rust installed. If you give someone a *.rb*, *.py*, or
 *.js* file, they need to have a Ruby, Python, or JavaScript implementation
 installed (respectively). But in those languages, you only need one command to
 compile and run your program. Everything is a trade-off in language design.
 
-Just compiling with `rustc` is fine for simple programs, but as your project
-grows, you’ll want to manage all the options and make it easy to share your
-code. Next, we’ll introduce you to the Cargo tool, which will help you write
-real-world Rust programs.
+Compilare solo con `rustc` va bene per i programmi semplici, ma mano a mano che
+il tuo progetto cresce, vorrai controllare tutte le opzioni e rendere semplice
+condividere il tuo codice. 
+In seguito, ti presenteremo il tool Cargo, che ti aiuterà a scrivere
+programmi in Rust per il mondo reale. 
 
 [troubleshooting]: ch01-01-installation.html#troubleshooting
