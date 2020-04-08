@@ -165,7 +165,8 @@ $ ls
 main  main.rs
 ```
 
-With CMD on Windows, you would enter the following:
+Sul CMD di Windows, devi scrivere questo:
+
 
 ```cmd
 > dir /B %= the /B option says to only show the file names =%
